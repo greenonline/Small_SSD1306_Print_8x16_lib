@@ -1,5 +1,5 @@
 /*
-** Small_SSD1306_Print_8x16_lib extends SSD1306_OLED_HW_I2C_LIB_PRINT_8X16
+** Small_SSD1306_Print_8x16_lib extends SSD1306_OLED_HW_I2C_PRINT_8X16_LIB
 
 ** SSD1306_OLED_HW_I2C_LIB — a minimalistic adaptation of Neven Boyanov’s SSD1306 library (http://tinusaur.org)
 ** Author: Ilya Perederiy
