@@ -1,0 +1,6 @@
+Small_SSD1306_Print_8x16_lib	KEYWORD1
+begin				KEYWORD2
+clear			KEYWORD2
+setCursor			KEYWORD2
+setCursorMode			KEYWORD2
+setPrint8x16CharacterMode	KEYWORD2
