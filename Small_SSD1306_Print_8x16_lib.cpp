@@ -52,12 +52,6 @@ Below are credits from the original SSD1306 library:
 
 #include "Small_SSD1306_Print_8x16_lib.h"
 
-
-
-boolean characterResolutionOn = true;
-boolean print8x16CharactersOn = true;
-
-
 //constructors
 
 Small_SSD1306_Print_8x16_lib::Small_SSD1306_Print_8x16_lib(void) : SSD1306_OLED_HW_I2C_PRINT_8X16_LIB()

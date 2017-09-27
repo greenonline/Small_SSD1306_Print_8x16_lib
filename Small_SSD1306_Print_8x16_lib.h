@@ -44,8 +44,6 @@ Below are credits from the original SSD1306 library:
 */
 
 
-
-
 #ifndef Small_SSD1306_Print_8x16_LIB_h
 #define Small_SSD1306_Print_8x16_LIB_h
 
@@ -68,65 +66,11 @@ class Small_SSD1306_Print_8x16_lib : public SSD1306_OLED_HW_I2C_PRINT_8X16_LIB {
     void setCursorMode(boolean characterResolutionMode);
     void setPrint8x16CharacterMode(boolean printMode);
 
-/*Delete
-//   virtual size_t write(uint8_t) = 0;   // try to uncomment, this should be used
-    size_t write(const char *str) {
-      if (str == NULL) return 0;
-      return write((const uint8_t *)str, strlen(str));
-    }
-    virtual size_t write(const uint8_t *buffer, size_t size);
-    size_t write(const char *buffer, size_t size) {
-      return write((const uint8_t *)buffer, size);
-    }
-
-    size_t print(const __FlashStringHelper *);
-    size_t print(const String &);
-    size_t print(const char[]);
-    size_t print(char);
-    size_t print(unsigned char, int = DEC);
-    size_t print(int, int = DEC);
-    size_t print(unsigned int, int = DEC);
-    size_t print(long, int = DEC);
-    size_t print(unsigned long, int = DEC);
-    size_t print(double, int = 2);
-    size_t print(const Printable&);
-
-    size_t println(const __FlashStringHelper *);
-    size_t println(const String &);
-    size_t println(const char[]);
-    size_t println(char);
-    size_t println(unsigned char, int = DEC);
-    size_t println(int, int = DEC);
-    size_t println(unsigned int, int = DEC);
-    size_t println(long, int = DEC);
-    size_t println(unsigned long, int = DEC);
-    size_t println(double, int = 2);
-    size_t println(const Printable&);
-*///Delete
-
   private:
-
-/*Delete
-    int write_error;
-
-    size_t D_PRINT();
-    size_t D_PRINT_FMEM(const __FlashStringHelper *ifsh);
-    size_t D_PRINT_LONG(long n, int base);
-    size_t D_PRINT_ULONG(unsigned long n, int base);
-    size_t D_PRINT_FLOAT(double n, int digits);
-    size_t D_PRINT_PRINTABLE(const Printable& x);
-
-    size_t printNumber(unsigned long, uint8_t);
-    size_t printFloat(double, uint8_t);
-*///Delete
 
     boolean characterResolutionOn;
     boolean print8x16CharactersOn;
 
-/*Delete
-    char ssd1306_longdec_buffer[];
-    uint8_t uslong2decascii(uint32_t num, char *buffer);
-*///Delete
 };
 
 #endif
