@@ -114,8 +114,8 @@ char *f2s2(float x, unsigned d, unsigned dp)
 //   unsigned digits = 0;
 
   // Error checks
-  if (d > buffMaxSize-2) return ("STL");  // Sanity check - "String Too Long" - d is more than maximum string length, plus terminating '\0' (plus preceeding '0'?)
-  if (d < dp + 2) return ("STS");         // Sanity check - "String Too Short" - d is less than number of decimal places plus preceeding '0'
+  if (d > buffMaxSize-2) return ("STL");  // Sanity check - "String Too Long" - d is more than maximum string length, plus terminating '\0' (plus preceding '0'?)
+  if (d < dp + 2) return ("STS");         // Sanity check - "String Too Short" - d is less than number of decimal places plus preceding '0'
   if (dp < 1) return("NDP");              // Sanity check - "No Decimal Places" - must have at least one decimal place
   
   unsigned dp_count=dp;
